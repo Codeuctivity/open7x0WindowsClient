@@ -1,0 +1,60 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Open7x0Client.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ftpUsername" Type="System.String" Scope="User">
+      <Value Profile="(Default)">root</Value>
+    </Setting>
+    <Setting Name="ftpPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">l1nux</Value>
+    </Setting>
+    <Setting Name="serveradress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.1.4</Value>
+    </Setting>
+    <Setting Name="mencoder4to3Parameter" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-vf dsize=4/3,scale=-10:-1,harddup -of lavf -lavfopts format=mp4 -ovc x264 -sws 9 -x264encopts nocabac:level_idc=30:bframes=0:bitrate=512:threads=auto:turbo=1:global_header:threads=auto</Value>
+    </Setting>
+    <Setting Name="mencoder16to9Parameter" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-vf yadif,dsize=16/9,scale=-10:-1,harddup -of lavf -lavfopts format=mp4 -ovc x264 -sws 9 -x264encopts nocabac:level_idc=30:bframes=0:bitrate=900:threads=auto:turbo=1:global_header:threads=auto</Value>
+    </Setting>
+    <Setting Name="mencoderStereoParameter" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-oac faac -faacopts mpeg=4:object=2:raw:br=128</Value>
+    </Setting>
+    <Setting Name="mencoderSurroundParameter" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-oac faac -faacopts mpeg=4:object=2:raw:br=256 -channels 6 -aid 128</Value>
+    </Setting>
+    <Setting Name="vlcParameters" Type="System.String" Scope="User">
+      <Value Profile="(Default)">--deinterlace=-1 --deinterlace-mode=x --play-and-exit --video-on-top</Value>
+    </Setting>
+    <Setting Name="vlcPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"C:\Program Files (x86)\VideoLAN\VLC\vlc.exe"</Value>
+    </Setting>
+    <Setting Name="localWorkingDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\TestDaten</Value>
+    </Setting>
+    <Setting Name="remoteVideoRoot" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/var/media/disk-volume-0/video</Value>
+    </Setting>
+    <Setting Name="DeleteOnEncoded" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="mencoderOutputFileExtension" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.mp4</Value>
+    </Setting>
+    <Setting Name="mencoderOutputFilename" Type="System.String" Scope="User">
+      <Value Profile="(Default)">%title% %eventID% %shortDescription% %autoIncrement%</Value>
+    </Setting>
+    <Setting Name="OverwriteExistingOutputfile" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="EncodeDolbyDigitalStreamWithSurroundSettings" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ShutdownAfterEncodingFinished" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="UseFtp" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
